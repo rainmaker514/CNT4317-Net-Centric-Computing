@@ -1,0 +1,206 @@
+host - nontraditional devices that are hooked up to the Internet; hosts = end systems.
+
+end system - a host.
+
+communication links - networks that connect end systems together. things like, copper wires and optical fibers.
+
+packet switches - takes a packet coming in on an incoming communication link and fowards it on an outgoing communication link. 
+
+transmission rate - the rate at which data is transmitted. measured in bits/second.
+
+packet - the packaging of info from the segmentation of data and addition of header bytes when on end system wants to send data to another.
+
+router - type of packet switch. used in the network core. 
+
+link-layer switch - type of packet switch. used in access networks.
+
+route and path - the sequence of communication links and packet switches traversed by a packet from the sending end system to the 
+receiving end system.
+
+ISP - where end systems access the internet through. provides network access to end systems.
+
+protocol - rules that control the sending and receiving of info on the internet
+
+TCP - a set of rules that governs the delivery of data over the Internet or other network that uses the Internet Protocol, 
+and sets up a connection between the sending and receiving computers.
+
+IP - a protocol that specifies the format of the packets that are sent and received among routers and end systems.
+
+internet standards - agreements on what each and every protocol does.
+ 
+RFC - requests for comments. Internet Engineering Task Force (IETF) standards documents. define protocols.
+
+distributed applications - apps that involve multiple end systems that exchange data with each other. 
+
+API - application programming interface. the interface between the application layer and the transport layer within a host.
+
+network protocols - similar to a human protocol (rules of driving), except that the entities exchanging messages and taking actions
+are hardware or software components of some device.
+
+network edge - covers everything that happens in the end systems. where a transport protocol moves messages from application processes to.
+
+clients - hosts that tend to be desktop and mobile PCs.
+
+servers - hosts that tend to be more powerful machines that store and distribute Web pages, stream video, and relay e-mail.
+
+access networks - the network that physically connects an end system to the first router (also known as
+the “edge router”) on a path from the end system to any other distant end system.
+
+DSL - Internet access from a local telephone company (telco) that provides its wired local phone access.
+
+cable internet access - makes use of the cable television company’s existing cable television infrastructure to provide internet.
+
+HFC - hybrid fiber coax.  fiber and coaxial cables combined. fiber optics connect the cable head to neighborhoods and coaxial cables
+are used to reach houses. 
+
+FTTH -  fiber to the home. an up-and-coming technology that provides even higher speeds.
+
+Ethernet - twisted-pair copper wire. way of connecting computers together in a local area network or LAN. most prevalent access technology
+in corporate, university, and home networks. 
+
+WiFi - Wireless LAN access based on IEEE 802.11 technology. uses radio waves to provide wireless high-speed Internet and network 
+connections.
+
+physical medium - twisted-pair copper wire, coaxial cable, multimode fiber-optic cable, terrestrial radio spectrum, and satellite radio
+spectrum. Transmission medium, a medium used in the propagation of energy waves.
+
+guided media - type of physical media. the waves are guided along a solid medium, such as a fiber-optic cable, a twisted-pair copper
+wire, or a coaxial cable.
+
+unguided media - type of physical media.  the waves propagate in the atmosphere and in outer
+space, such as in a wireless LAN or a digital satellite channel.
+
+UTP - Unshielded twisted pair. commonly used for computer networks within a building, that is, for LANs.
+
+coaxial cable - used to reach individual houses and apartments. consists of two concentric copper conductors. the special insulation
+and shielding makes it achieve high data transmission rates.  
+
+shared medium - a number of end systems can be connected.
+
+fiber optics - a thin, flexible medium that conducts pulses of light, with each pulse representing a
+bit. 
+
+terrestrial radio - Any radio signal that travels along the land, is broadcast from a land based station and is received by land based
+receivers. 
+
+satellite radio - a radio service in which the signals are transmitted or retransmitted by a communications satellite.
+
+geostationary satellite - satellites that permanently remain above the same spot on Earth
+
+LEO satellite - placed much closer to Earth and do not remain permanently above one spot on Earth.
+
+messages - info exchanged between end systems. can contain data or perform a control function.
+
+store-and-forward - the packet switch must receive the entire packet before it can begin to transmit the first bit of the packet onto the 
+outbound link.
+
+output buffer/output queue - stores packets that the router is about to send.
+
+queuing delays - depend on the level of congestion in the network. the sum of the delays encountered by a packet between the time of 
+insertion into the network and the time of delivery to the address.
+
+packet loss - an arriving packet may find that the buffer is completely full with other packets waiting for transmission so either the 
+arriving packet or one of the already-queued packets will be dropped.
+
+forwarding table - maps destination addresses (or portions of the destination addresses) to that router’s outbound links.
+
+circuit switching - the resources needed along a path (buffers, link transmission rate) to provide for communication between the end 
+systems are reserved for the duration of the communication session between the end systems. 
+
+packet switching - resources are not reserved; a session’s messages use the resources on demand and, as a consequence, may have to wait 
+(that is, queue) for access to a communication link.
+
+	As a simple analogy, consider two restaurants, one that
+	requires reservations and another that neither requires reservations nor accepts them. For the
+	restaurant that requires reservations, we have to go through the hassle of calling before we leave home.
+	But when we arrive at the restaurant we can, in principle, immediately be seated and order our meal.
+	For the restaurant that does not require reservations, we don’t need to bother to reserve a table. But
+	when we arrive at the restaurant, we may have to wait for a table before we can be seated.
+
+circuit - connection between the sender and the receiver. 
+
+end-to-end connection - established by a network when two hosts want to communicate.
+
+FDM - frequency-division multiplexing. the frequency spectrum of a link is divided up among the connections
+established across the link. Specifically, the link dedicates a frequency band to each connection for the
+duration of the connection.
+
+TDM - time-division multiplexing. time is divided into frames of fixed duration, and each frame is divided into a fixed
+number of time slots. When the network establishes a connection across a link, the network dedicates
+one time slot in every frame to this connection. 
+
+bandwidth - a range of frequencies within a given band, in particular that used for transmitting a signal.
+
+silent periods - when dedicated circuits are idle during circuit switching.
+
+customer - the access ISP.
+
+provider - global transit ISP.
+
+regional ISP - where the access ISPs in the region connect.
+
+tier-1 ISP - where each regional ISP connects to.
+
+PoP for ISP - a group of one or more routers (at the same location) in the provider’s network where customer
+ISPs can connect into the provider ISP.
+
+multi-homed ISP - to connect to two or more provider ISPs.
+
+peer - two or more computers that can directly connect their networks together so that all the traffic between them passes over the
+direct connection rather than through upstream intermediaries.
+
+IXP - Internet Exchange Point (IXP), which is a meeting point where multiple ISPs can peer together.
+
+content provider networks - services like google.
+
+nodal processing delay - The time required to examine the packet’s header and determine where to direct the packet.
+
+queuing delay - depends on the number of earlier-arriving packets that are queued and waiting for transmission onto the link.
+
+transmission delay - L/R. This is the amount of time required to push (that is, transmit) all of the packet’s bits into the link.
+
+propagation delay - The time required to propagate from the beginning of the link to the router.
+
+total nodal delay - the accumulation of nodal processing delay, queuing delay, transmission delay, and propagation delay.
+
+traffic intensity - The ratio La/R. Where 'a' is in units of packets/sec. L in bits and R in bits/sec.
+
+packet drop - results when a router has no place to store a packet.
+
+packet loss - when packet drop occurs, the packet is lost.
+
+traceroute -  a simple program that can run in any Internet host. When the user specifies a
+destination hostname, the program in the source host sends multiple, special packets toward that
+destination. As these packets work their way toward the destination, they pass through a series of
+routers. When a router receives one of these special packets, it sends back to the source a short
+message that contains the name and address of the router.
+
+instantaneous throughput - the rate (in bits/sec) at which a Host is receiving the file. 
+
+average throughput - F/T bits/sec where F is the amount of bits in a file and T is how many seconds it takes for a Host to receive all
+F bits.
+
+bottleneck link - a link that is fully used and of all the flows sharing the link, the given data flow achieves maximum data rate network-
+wide. 
+
+layered architecture - an architecture in which data moves from one defined level of processing to another. allows us to discuss a 
+well-defined, specific part of a large and complex system.
+
+service model - the services that a layer offers to the layer above.
+
+internet protocol stack - consists of five layers: the physical, link, network, transport, and application layers.
+
+ISO OSI protocol stack - Open Systems Interconnection.  application layer, presentation layer, session layer, transport layer, 
+network layer, data link layer, and physical layer.
+
+application-layer message - a message sent from the application layer to the transport layer.
+
+transport-layer segment - encapsulates the application-layer message.  
+
+network-layer datagram - The transport layer then passes the segment to the network layer, which adds network-layer header information 
+such as source and destination end system addresses.
+
+link-layer frame - The datagram is then passed to the link layer, which (of course!) will add its own link-layer header information and 
+create a link-layer frame.
+
+payload field - a packet from the layer above.
